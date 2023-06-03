@@ -17,8 +17,6 @@ public class PlayerKartController : MonoBehaviour
     {
         float motor = Input.GetAxis("Vertical");
         float steering = Input.GetAxis("Horizontal");
-        Debug.Log(motor);
-        Debug.Log(steering);
         kartController.Drive(motor);
         kartController.Turn(steering);
     }
