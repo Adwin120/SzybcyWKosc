@@ -290,6 +290,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &871786682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8776561394036613689, guid: b39dda17ec6077a4cb64a767ac271600, type: 3}
+  m_PrefabInstance: {fileID: 1191564871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &871786688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871786682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41ab32ce74c70741b2d00b58a3a6181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,6 +432,30 @@ PrefabInstance:
     - target: {fileID: 57612937546523166, guid: b39dda17ec6077a4cb64a767ac271600, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568040450091791760, guid: b39dda17ec6077a4cb64a767ac271600, type: 3}
+      propertyPath: turnDrag
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568040450091791760, guid: b39dda17ec6077a4cb64a767ac271600, type: 3}
+      propertyPath: driftTurnDrag
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568040450091791760, guid: b39dda17ec6077a4cb64a767ac271600, type: 3}
+      propertyPath: sideDragMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248843729119125943, guid: b39dda17ec6077a4cb64a767ac271600, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3274972548175940842, guid: b39dda17ec6077a4cb64a767ac271600, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3274972548175940842, guid: b39dda17ec6077a4cb64a767ac271600, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 4036575331012413666, guid: b39dda17ec6077a4cb64a767ac271600, type: 3}
       propertyPath: m_Name
