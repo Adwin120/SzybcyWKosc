@@ -7,7 +7,7 @@ public class PlayerKartController : MonoBehaviour
 {
     // Start is called before the first frame update
     private KartController kartController;
-    [SerializeField] PlayerInput playerInput;
+    private PlayerInput playerInput;
 
     void Start()
     {
@@ -16,7 +16,6 @@ public class PlayerKartController : MonoBehaviour
     }
 
     // Update is called once per frame
-    private bool lastJumpState = false;
     void Update()
     {
         float steering = playerInput.actions["Move"].ReadValue<Vector2>().x;
@@ -25,15 +24,13 @@ public class PlayerKartController : MonoBehaviour
         //float steering = Input.GetAxis("Horizontal");
         kartController.Drive(motor);
         kartController.Turn(steering);
-        if (playerInput.actions["Drift"].IsPressed() && lastJumpState == false)
+        if (playerInput.actions["Drift"].IsPressed())
         {
             kartController.StartDrift();
-            lastJumpState = true;
         }
         else
         {
             kartController.StopDrift();
-            lastJumpState = false;
         }
     }
 }

@@ -9,8 +9,10 @@ public class AiCotroller : MonoBehaviour
     public Material brakeLights;
 
     //other classes ->
-    private carModifier modifier;
-    private inputManager IM;
+
+    //TODO
+    //private carModifier modifier;
+    //private inputManager IM;
     [HideInInspector] public bool test; //engine sound boolean
 
     [Header("Variables")]
@@ -33,7 +35,8 @@ public class AiCotroller : MonoBehaviour
     [HideInInspector] public WheelCollider[] wheels = new WheelCollider[4];
     private GameObject centerOfMass;
     private Rigidbody rigidbody;
-    public finishTrigger triggerScript;
+    //TODO
+    //public finishTrigger triggerScript;
 
     [HideInInspector]
     public float engineLerpValue, startStifness, radius = 4, steerSmooth, gearChangeRate, brakPower = 0,
@@ -249,13 +252,13 @@ public class AiCotroller : MonoBehaviour
     private void getObjects()
     {
 
-        IM = GetComponent<inputManager>();
-        modifier = GetComponent<carModifier>();
+        //IM = GetComponent<inputManager>();
+        //modifier = GetComponent<carModifier>();
         rigidbody = GetComponent<Rigidbody>();
         wheelSlip = new float[wheels.Length];
         centerOfMass = gameObject.transform.Find("mass").gameObject;
         rigidbody.centerOfMass = centerOfMass.transform.localPosition;
-        triggerScript = transform.Find("finishTriggerObject").GetComponent<finishTrigger>();
+        //triggerScript = transform.Find("finishTriggerObject").GetComponent<finishTrigger>();
 
     }
 
@@ -487,10 +490,10 @@ public class AiCotroller : MonoBehaviour
     {
         if (currentNode.nextWaypoint == null)
         {
-            currentNode = currentNode.previousWaypont;
+            currentNode = currentNode.previousWaypoint;
             return;
         }
-        if (currentNode.previousWaypont == null)
+        if (currentNode.previousWaypoint == null)
         {
             currentNode = currentNode.nextWaypoint;
             return;

@@ -7,13 +7,11 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     public float smoothing;
     public float rotationSmoothing;
-    private Transform cameraGoalPos;
-    private Camera playerCamera;
+    public Transform cameraGoalPos;
+    public Camera playerCamera;
 
     void Start()
     {
-        cameraGoalPos = GameObject.FindGameObjectsWithTag("CameraGoalPosition")[0].transform;
-        playerCamera = GetComponentInChildren<Camera>();
     }
 
     // Update is called once per frame
