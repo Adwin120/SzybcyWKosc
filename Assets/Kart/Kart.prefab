@@ -326,12 +326,12 @@ MonoBehaviour:
   maxMotorForce: 250
   airControlMotorForce: 50
   speedCap: 50
-  maxTurnForce: 20
-  sideDragMultiplier: 10
+  maxTurnForce: 30
+  sideDragMultiplier: 20
   driftSideDragMultuplier: 2
   forwardDragMultiplier: 1
-  turnDrag: 6
-  driftTurnDrag: 4
+  turnDrag: 100
+  driftTurnDrag: 0.5
   kartRoller: {fileID: 7182492217421244662}
   kartBody: {fileID: 9032398424661130120}
   trailEmitters:
