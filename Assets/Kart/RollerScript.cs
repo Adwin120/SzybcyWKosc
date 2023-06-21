@@ -38,8 +38,8 @@ public class RollerScript : MonoBehaviour
         if (collision.contactCount == 0) return;
         if (collision.gameObject.layer == DRIVEABLE_LAYER)
         {
+            kartController.isOnGround = true;
             kartController.groundNormal = collision.GetContact(0).normal;
-            Debug.DrawRay(collision.GetContact(0).point, collision.GetContact(0).normal * 100, Color.white, 0, false);
         }
     }
 }

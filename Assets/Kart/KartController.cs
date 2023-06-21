@@ -36,14 +36,25 @@ public class KartController : MonoBehaviour
     {
         var angleTransformation = Quaternion.FromToRotation(kartBody.transform.up, groundNormal);
         var targetAngle = angleTransformation * kartBody.transform.rotation;
-        if (isOnGround)
+        var debugColor = Color.red;
+        if (Quaternion.Angle(targetAngle, kartBody.transform.rotation) <= 50 || Quaternion.Angle(targetAngle, Quaternion.identity) < 45)
         {
-            kartBody.transform.rotation = Quaternion.Slerp(kartBody.transform.rotation, targetAngle, 0.1f);
+            debugColor = Color.white;
+            if (isOnGround)
+            {
+                kartBody.transform.rotation = Quaternion.Slerp(kartBody.transform.rotation, targetAngle, 0.1f);
+            }
+            else
+            {
+                kartBody.transform.rotation = targetAngle;
+            }
         }
-        else
-        {
-            kartBody.transform.rotation = targetAngle;
-        }
+        Debug.DrawRay(kartBody.position, groundNormal * 100, debugColor, 0, false);
+    }
+
+    public Quaternion getBodyRotation()
+    {
+        return kartBody.transform.rotation;
     }
 
     private void applyControlForces()

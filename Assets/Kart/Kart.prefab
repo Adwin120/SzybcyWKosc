@@ -173,7 +173,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4382903059910752964}
   serializedVersion: 2
-  m_Mass: 5
+  m_Mass: 6
   m_Drag: 0
   m_AngularDrag: 1
   m_UseGravity: 1
@@ -197,18 +197,18 @@ ConfigurableJoint:
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
-  m_YMotion: 0
+  m_YMotion: 1
   m_ZMotion: 0
   m_AngularXMotion: 2
   m_AngularYMotion: 2
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 100000
+    damper: 100000
   m_LinearLimit:
-    limit: 0
+    limit: 9.81
     bounciness: 0
-    contactDistance: 0
+    contactDistance: 10.92
   m_AngularXLimitSpring:
     spring: 0
     damper: 0
@@ -240,7 +240,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_YDrive:
     serializedVersion: 3
-    positionSpring: 0
+    positionSpring: 10.1
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ZDrive:
@@ -443,7 +443,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8779077512454266485}
   serializedVersion: 2
-  m_Mass: 2
+  m_Mass: 1
   m_Drag: 0.5
   m_AngularDrag: 0
   m_UseGravity: 1
