@@ -6,4 +6,5 @@ using UnityEngine;
 public class GameSettings : ScriptableObject
 {
     public float volume = 0.5f;
+    public int aiPlayersAmount = 0;
 }
