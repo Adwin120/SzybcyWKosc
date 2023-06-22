@@ -16,12 +16,14 @@ public class KillZone : MonoBehaviour
             if (pd.GotToCheckPoint)
             {
                 other.GetComponent<Rigidbody>().MovePosition(GameObject.Find("CheckPointTrigger").transform.position);
+                //other.transform.parent.GetComponentInChildren<Rigidbody>().MovePosition(GameObject.Find("CheckPointTrigger").transform.position);
                 other.transform.parent.GetChild(1).GetComponent<Rigidbody>().MovePosition(GameObject.Find("CheckPointTrigger").transform.position);
             }
             else
             {
                 other.GetComponent<Rigidbody>().MovePosition(GameObject.Find("FinishLineTrigger").transform.position);
                 other.transform.parent.GetChild(1).GetComponent<Rigidbody>().MovePosition(GameObject.Find("FinishLineTrigger").transform.position);
+                //other.transform.parent.GetComponentInChildren<Rigidbody>().MovePosition(GameObject.Find("CheckPointTrigger").transform.position);
             }
         }
     }
