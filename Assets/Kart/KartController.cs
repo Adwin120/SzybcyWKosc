@@ -40,14 +40,7 @@ public class KartController : MonoBehaviour
         if (Quaternion.Angle(targetAngle, kartBody.transform.rotation) <= 50 || Quaternion.Angle(targetAngle, Quaternion.identity) < 45)
         {
             debugColor = Color.white;
-            if (isOnGround)
-            {
-                kartBody.transform.rotation = Quaternion.Slerp(kartBody.transform.rotation, targetAngle, 0.1f);
-            }
-            else
-            {
-                kartBody.transform.rotation = targetAngle;
-            }
+            kartBody.transform.rotation = Quaternion.Slerp(kartBody.transform.rotation, targetAngle, 0.1f);
         }
         Debug.DrawRay(kartBody.position, groundNormal * 100, debugColor, 0, false);
     }
