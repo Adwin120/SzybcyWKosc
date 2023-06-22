@@ -920,6 +920,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3229171477363766769, guid: abcc6d22d2328384b8eaf87e9d0f8668, type: 3}
+      propertyPath: eventSystem
+      value: 
+      objectReference: {fileID: 5723819152889765575}
+    - target: {fileID: 3229171477363766769, guid: abcc6d22d2328384b8eaf87e9d0f8668, type: 3}
       propertyPath: returnFocusTo
       value: 
       objectReference: {fileID: 6619619374365164779}

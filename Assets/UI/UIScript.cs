@@ -38,4 +38,14 @@ public class UIScript : MonoBehaviour
     {
         pauseMenu.SetActive(!pauseMenu.activeSelf);
     }
+
+    public void OnLap(PlayerData playerData)
+    {
+
+    }
+
+    public void OnWin(PlayerData playerData)
+    {
+
+    }
 }
