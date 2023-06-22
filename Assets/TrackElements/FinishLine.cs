@@ -7,7 +7,7 @@ using UnityEngine;
 public class FinishLine : MonoBehaviour
 {
     // plan jest taki ¿e finish line bêdzie kontrolowa³o ca³¹ grê czy coœ xd
-
+    public UIScript gameUI;
     public int laps = 2;
 
     private void OnTriggerEnter(Collider other)
@@ -24,10 +24,10 @@ public class FinishLine : MonoBehaviour
 
             if (pd.LapCount == laps)
             {
-                Debug.Log("wygrywa " + other.name);
+                gameUI.OnWin(pd);
             }
 
-            Debug.Log(pd.LapCount);
+            gameUI.OnLap(pd);
         }
     }
 

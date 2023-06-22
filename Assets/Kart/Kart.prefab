@@ -323,10 +323,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120d4f63d7110714ca6153d9ca8c4818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMotorForce: 250
+  maxMotorForce: 1
   airControlMotorForce: 50
-  speedCap: 50
-  maxTurnForce: 30
+  speedCap: 1
+  maxTurnForce: 1
   sideDragMultiplier: 20
   driftSideDragMultuplier: 2
   forwardDragMultiplier: 1
