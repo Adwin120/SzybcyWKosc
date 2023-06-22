@@ -377,6 +377,7 @@ GameObject:
   - component: {fileID: 503313178}
   - component: {fileID: 503313177}
   - component: {fileID: 503313176}
+  - component: {fileID: 503313180}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -469,6 +470,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &503313180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503313175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 69242ad2a4e0c314db0b23b3a2e93baa, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: 019e77d2-c01f-4937-888b-d4c2f6c6e1c7
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &638509623
 GameObject:
   m_ObjectHideFlags: 0

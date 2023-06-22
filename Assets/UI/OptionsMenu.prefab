@@ -1152,7 +1152,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3993437028303586257}
   - component: {fileID: 3229171477363766769}
-  - component: {fileID: 3718699748810460273}
   m_Layer: 0
   m_Name: OptionsMenu
   m_TagString: Untagged
@@ -1202,36 +1201,6 @@ MonoBehaviour:
   eventSystem: {fileID: 0}
   returnFocusTo: {fileID: 0}
   settings: {fileID: 11400000, guid: af0370a097b66d94d8986b3d7c94911b, type: 2}
---- !u!114 &3718699748810460273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8706254901484129183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 69242ad2a4e0c314db0b23b3a2e93baa, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: UI
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &9146850307865654405
 GameObject:
   m_ObjectHideFlags: 0
