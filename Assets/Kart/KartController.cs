@@ -45,6 +45,12 @@ public class KartController : MonoBehaviour
         Debug.DrawRay(kartBody.position, groundNormal * 100, debugColor, 0, false);
     }
 
+    public void stopVelocity()
+    {
+        kartBody.velocity = Vector3.zero;
+        kartRoller.velocity = Vector3.zero;
+    }
+
     public Quaternion getBodyRotation()
     {
         return kartBody.transform.rotation;
