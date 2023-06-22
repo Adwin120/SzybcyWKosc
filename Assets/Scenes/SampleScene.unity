@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -356,7 +356,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &618197975
 MonoBehaviour:
@@ -791,6 +791,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1579282987822796750, guid: 941fac9249b6442cdb2d3f23472128e2, type: 3}
   m_PrefabInstance: {fileID: 2050352352}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1580426798 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2424058080098030499, guid: 3388f269f56231c4caa2d2b4263ce4c9, type: 3}
+  m_PrefabInstance: {fileID: 1279462981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1667562569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1103,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6619619373766776440, guid: c1ee51c11be498d4f8f0a09080b8bc4c, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1580426798}
     - target: {fileID: 6619619373766776441, guid: c1ee51c11be498d4f8f0a09080b8bc4c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1108,7 +1117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6619619373766776441, guid: c1ee51c11be498d4f8f0a09080b8bc4c, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6619619373766776441, guid: c1ee51c11be498d4f8f0a09080b8bc4c, type: 3}
       propertyPath: m_AnchorMax.x
