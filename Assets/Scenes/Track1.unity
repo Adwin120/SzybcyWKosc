@@ -4612,6 +4612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4554150986883866547, guid: 656fb155b55c0fd40b45c1f61c01ecda, type: 3}
+      propertyPath: playerName
+      value: Player1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 656fb155b55c0fd40b45c1f61c01ecda, type: 3}
 --- !u!1 &1538963882
@@ -6755,6 +6759,10 @@ PrefabInstance:
     - target: {fileID: 3600323967784428456, guid: e3754dfc1a7cf5b409623e193c10b4a2, type: 3}
       propertyPath: m_Name
       value: StartFinish_Line
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031011549491719635, guid: e3754dfc1a7cf5b409623e193c10b4a2, type: 3}
+      propertyPath: laps
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3754dfc1a7cf5b409623e193c10b4a2, type: 3}

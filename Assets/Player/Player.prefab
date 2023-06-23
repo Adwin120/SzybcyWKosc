@@ -648,7 +648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LapCount: 0
   GotToCheckPoint: 0
-  playerName: Player1
+  playerName: Player2
 --- !u!1 &5784774033029540429
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +660,7 @@ GameObject:
   - component: {fileID: 3926800906374515226}
   - component: {fileID: 2202369939672575913}
   - component: {fileID: 2685836711076577300}
+  - component: {fileID: 6018978549434078877}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -733,6 +734,15 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5784774033029540429}
   m_Enabled: 1
+--- !u!45 &6018978549434078877
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5784774033029540429}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 69e10e886d52d20478f9ed5424126be8, type: 2}
 --- !u!1 &8266137784242528601
 GameObject:
   m_ObjectHideFlags: 0

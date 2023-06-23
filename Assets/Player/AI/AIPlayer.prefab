@@ -425,7 +425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LapCount: 0
   GotToCheckPoint: 0
-  playerName: Player1
+  playerName: ComputerPlayer
 --- !u!195 &2998863295737902090
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -689,7 +689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120d4f63d7110714ca6153d9ca8c4818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMotorForce: 100
+  maxMotorForce: 90
   airControlMotorForce: 50
   speedCap: 50
   maxTurnForce: 5

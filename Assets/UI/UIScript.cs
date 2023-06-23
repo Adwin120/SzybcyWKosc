@@ -55,7 +55,7 @@ public class UIScript : MonoBehaviour
 
     public void OnWin(PlayerData playerData)
     {
-        winText.text = "Wygra³ gracz: " + playerData.name;
+        winText.text = "Wygra³ gracz: " + playerData.playerName;
         Time.timeScale = 0;
     }
 }
