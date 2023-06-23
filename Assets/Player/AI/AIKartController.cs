@@ -35,7 +35,7 @@ public class AIKartController : MonoBehaviour
 
         var kartBody = kartController.getBody();
         float angle = Vector3.SignedAngle(kartBody.transform.forward, agent.desiredVelocity, Vector3.up);
-        Debug.Log(angle.ToString() + " angle");
+        //Debug.Log(angle.ToString() + " angle");
         angle = angle / 180f;
 
         float driveSpeed = 1f - Mathf.Abs(angle) * 1f;

@@ -9,6 +9,7 @@ public class UIScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject pauseMenu;
+    public TMPro.TextMeshProUGUI winText;
 
     private InputSystemUIInputModule input;
     void Start()
@@ -16,6 +17,7 @@ public class UIScript : MonoBehaviour
         //pauseMenu.SetActive(false);
         input = this.GetComponent<InputSystemUIInputModule>();
         input.cancel.action.performed += OnCancelCallback;
+        Time.timeScale = 0;
 
     }
 
@@ -37,6 +39,13 @@ public class UIScript : MonoBehaviour
     void OnCancel()
     {
         pauseMenu.SetActive(!pauseMenu.activeSelf);
+        if (pauseMenu.activeSelf)
+        {
+            Time.timeScale = 0;
+        } else
+        {
+            Time.timeScale = 1;
+        }
     }
 
     public void OnLap(PlayerData playerData)
@@ -46,6 +55,7 @@ public class UIScript : MonoBehaviour
 
     public void OnWin(PlayerData playerData)
     {
-
+        winText.text = "Wygra³ gracz: " + playerData.name;
+        Time.timeScale = 0;
     }
 }

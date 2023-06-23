@@ -415,7 +415,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
@@ -648,6 +648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LapCount: 0
   GotToCheckPoint: 0
+  playerName: Player1
 --- !u!1 &5784774033029540429
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,15 +906,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120d4f63d7110714ca6153d9ca8c4818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMotorForce: 1
+  maxMotorForce: 100
   airControlMotorForce: 50
   speedCap: 50
-  maxTurnForce: 20
+  maxTurnForce: 5
   sideDragMultiplier: 10
   driftSideDragMultuplier: 2
   forwardDragMultiplier: 1
-  turnDrag: 6
-  driftTurnDrag: 4
+  turnDrag: 4
+  driftTurnDrag: 2
   kartRoller: {fileID: 7552504007338989530}
   kartBody: {fileID: 8519458635992548516}
   trailEmitters:

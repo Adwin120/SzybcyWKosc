@@ -25,9 +25,11 @@ public class FinishLine : MonoBehaviour
             if (pd.LapCount == laps)
             {
                 gameUI.OnWin(pd);
+                Debug.Log("win: " + pd.name);
             }
 
             gameUI.OnLap(pd);
+            Debug.Log("lap: " + pd.name);
         }
     }
 
