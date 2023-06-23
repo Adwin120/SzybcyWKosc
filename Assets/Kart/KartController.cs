@@ -51,11 +51,15 @@ public class KartController : MonoBehaviour
         kartRoller.velocity = Vector3.zero;
     }
 
-    public Vector3 getRotation()
+    public Vector3 getPosition()
     {
-        return kartBody.velocity.normalized;
+        return kartBody.transform.position;
     }
 
+    public Rigidbody getBody()
+    {
+        return kartBody;
+    }
     public Quaternion getBodyRotation()
     {
         return kartBody.transform.rotation;

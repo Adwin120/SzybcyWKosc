@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120d4f63d7110714ca6153d9ca8c4818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMotorForce: 1
+  maxMotorForce: 100
   airControlMotorForce: 50
   speedCap: 1
   maxTurnForce: 1

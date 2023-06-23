@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Audio;
 
 public class AIKartController : MonoBehaviour
 {
@@ -24,26 +25,22 @@ public class AIKartController : MonoBehaviour
     void Update()
     {
         //agent.SetDestination(currentWaypoint.nextWaypoint.transform.position);
-        agent.SetDestination(GameObject.Find("CheckPointTrigger").transform.position);
-        if(agent.remainingDistance < 30)
+        agent.SetDestination(currentWaypoint.transform.position);
+        if (agent.remainingDistance < 30)
         {
             currentWaypoint = currentWaypoint.nextWaypoint;
+            agent.SetDestination(currentWaypoint.transform.position);
         }
-        Debug.Log(currentWaypoint.ToString());
-        //float steering = playerInput.actions["Move"].ReadValue<Vector2>().x;
-        //float motor = playerInput.actions["Move"].ReadValue<Vector2>().y;
-        //float motor = Input.GetAxis("Vertical");
-        //float steering = Input.GetAxis("Horizontal");
-        //var turnTowardNavSteeringTarget = agent.path.;
-        //Debug.Log(turnTowardNavSteeringTarget.ToString());
-        //float turnAngle = turnTowardNavSteeringTarget.x - kartController.getRotation().x;
-        //turnTowardNavSteeringTarget.x
-        //float angle = Vector3.SignedAngle(kartController.getRotation(), turnTowardNavSteeringTarget, Vector3.up);
-        //angle = angle / 180f;
-        float angle = 0;
-        float driveSpeed = 0.5f - Mathf.Abs(angle) * 0.5f;
-        //kartController.Drive(driveSpeed);
-        //kartController.Turn(angle/20);
+        Debug.DrawRay(kartController.getPosition(), agent.desiredVelocity *100, Color.blue, 0, false);
+
+        var kartBody = kartController.getBody();
+        float angle = Vector3.SignedAngle(kartBody.transform.forward, agent.desiredVelocity, Vector3.up);
+        Debug.Log(angle.ToString() + " angle");
+        angle = angle / 180f;
+
+        float driveSpeed = 1f - Mathf.Abs(angle) * 1f;
+        kartController.Drive(driveSpeed);
+        kartController.Turn(Mathf.Sign(angle));
         //if (playerInput.actions["Drift"].IsPressed())
         //{
         //    kartController.StartDrift();
